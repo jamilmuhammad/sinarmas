@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "6fa695a8-5cd8-4c76-acac-183b632d0fbd",
+		"name": "Sinarmas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9490374"
+	},
+	"item": [
+		{
+			"name": "post product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product\": [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Computer\",\r\n            \"price\": 10000,\r\n            \"category\": \"Electronic\"\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"name\": \"Soap\",\r\n            \"price\": 20000,\r\n            \"category\": \"Body Care\"\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"name\": \"Handphone\",\r\n            \"price\": 30000,\r\n            \"category\": \"Electronic\"\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"name\": \"Sprite\",\r\n            \"price\": 40000,\r\n            \"category\": \"Beverage\"\r\n        },\r\n        {\r\n            \"id\": 5,\r\n            \"name\": \"Fanta\",\r\n            \"price\": 50000,\r\n            \"category\": \"Beverage\"\r\n        },\r\n        {\r\n            \"id\": 6,\r\n            \"name\": \"Laptop\",\r\n            \"price\": 80000,\r\n            \"category\": \"Electronic\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9010/api/v1/product",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"api",
+						"v1",
+						"product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "succes login user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mjamil1339@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/api/v1/users/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"auth"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 28 Aug 2024 20:54:06 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "762"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": null,\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"username\": \"jamilmuh\",\n            \"email\": \"mjamil1339@gmail.com\",\n            \"role\": \"admin\",\n            \"status\": \"verified\"\n        },\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJqYW1pbG11aCIsImVtYWlsIjoibWphbWlsMTMzOUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJzdGF0dXMiOiJ2ZXJpZmllZCIsIk1hcENsYWltcyI6eyJleHAiOjE3MjQ5NjQ4NDYsImlhdCI6MTcyNDg3ODQ0NiwidXNlcl9pZCI6Ilx1MDAwMSJ9fQ.65hblFJ7mXvwOLwcQUhFzHicfTHyjIrvHmIk0NmA7Cs\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJqYW1pbG11aCIsImVtYWlsIjoibWphbWlsMTMzOUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJzdGF0dXMiOiJ2ZXJpZmllZCIsIk1hcENsYWltcyI6eyJleHAiOjE3MjU0ODMyNDYsImlhdCI6MTcyNDg3ODQ0NiwidXNlcl9pZCI6Ilx1MDAwMSJ9fQ.wJtqHHQiPYdiKt4mFYJ-BFAh5HulGL0ae0f0W6RiT9U\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
